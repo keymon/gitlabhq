@@ -8,6 +8,8 @@ def linux_only(require_as)
   RUBY_PLATFORM.include?('linux') && require_as
 end
 
+gem "bigdecimal"
+
 gem "rails", "3.2.8"
 
 # Supported DBs
@@ -65,7 +67,7 @@ gem "seed-fu"
 # Markdown to HTML
 gem "redcarpet",     "~> 2.1.1"
 gem "github-markup", "~> 0.7.4", require: 'github/markup'
-
+gem "org-ruby"
 # Servers
 gem "thin"
 gem "unicorn"
